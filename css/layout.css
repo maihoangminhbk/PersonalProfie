@@ -8,13 +8,14 @@ body{
 
 
 header{
-    position: fixed;
-    padding: 10px;
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #ff3a10;
     height: 40px;
     width: 100%;
     border-radius: 10px;
-    float: left;
 
 }
 
@@ -26,14 +27,14 @@ aside{
     min-width: 300px;
     text-align: center;
     border-radius: 10px;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 #content{
     float: left;
     margin: 0px auto 0px auto;
     min-width: 200px;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 footer{
@@ -42,6 +43,7 @@ footer{
     width: 100%;
     height: 100px;
     border-radius: 10px;
+    text-decoration-color: aliceblue;
 }
 
 .profile-img{
@@ -51,6 +53,10 @@ footer{
     padding: 20px;
     background-color: #ffb497;
     border: 5px solid #ff7053;
+    cursor: pointer;
+}
+.profile-img:hover{
+    background-color: #633b2b;
 }
 
 .profile-info-list{
@@ -59,6 +65,7 @@ footer{
 }
 .profile-info-list:hover{
     color: rgba(255, 255, 255, 1);
+
 }
 
 li{
@@ -69,8 +76,9 @@ a{
     text-decoration: none;
 }
 
-h1{
-    font-size: calc(1rem + 2.7vw);
+#about{
+    margin-bottom: 10px;
+    font-size: 50px;
 }
 
 .text-primary{
@@ -79,12 +87,18 @@ h1{
 
 .right-align{
     float: right;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.right-align-setting{
+    float: right;
+    padding-left: 20px;
     padding-right: 20px;
 }
 
 .right-align:hover{
-    background-color: #cb1c01;
+    background-color: #ec604b;
 }
 
 .sign-img{
@@ -96,4 +110,40 @@ h1{
 
 article{
     margin-bottom: 200px;
+}
+
+@media (max-width: 1200px) {
+    aside, section {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: 30px;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fd3a10;
+    min-width: 85px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover{
+    background-color: #cb1c01;
 }

@@ -5,18 +5,26 @@
     <title>Hoang Minh Profie</title>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script/functions.js"></script>
 </head>
-<body>
-    <header>
+<body id="body">
+    <header id="header">
         <a href="index.html"><img class="sign-img" src="images/signature.gif" alt="Sign"></a>
-        <a href="https://www.facebook.com/MHMHACKER" target="_blank"><i class="fa fa-facebook-official right-align" style="font-size:30px;color: #222bd0"></i></a>
-        <a href="https://github.com/maihoangminhbk" target="_blank"><i class="fa fa-github right-align" style="font-size:30px;color: white"></i></a>
-        <a href="mailto:maihoangminhbk@gmail.com" target="_blank"><i class="fa fa-envelope right-align" style="font-size:30px;color: darkgreen"></i></a>
+        <span class="dropdown right-align">
+            <i class="fa fa-gear fa-spin right-align-setting" style="font-size:30px"></i>
+            <div class="dropdown-content">
+                <a onclick="changeLayout()">Layout <img src="images/change-layout.png" alt="Layout" style="width: 20px;height: 20px"></a>
+                <a onclick="changeColor()">Color <img src="images/change-color.jpg" alt="Color" style="width: 20px;height: 20px"></a>
+            </div>
+        </span>
+        <a href="https://www.facebook.com/MHMHACKER" target="_blank"><i class="fa fa-facebook-official right-align" style="font-size:30px;color: #222bd0" title="Facebook"></i></a>
+        <a href="https://github.com/maihoangminhbk" target="_blank"><i class="fa fa-github right-align" style="font-size:30px;color: white" title="Github"></i></a>
+        <a href="mailto:maihoangminhbk@gmail.com" target="_blank"><i class="fa fa-envelope right-align" style="font-size:30px;color: darkgreen" title="Email"></i></a>
 
     </header>
-    <aside>
+    <aside id="aside">
         <div>
-            <img class="profile-img" src="images/profile.jpg" alt="Profile">
+            <img id="profile-img" class="profile-img" src="images/profile.jpg" alt="Profile" onclick="changeColor(this)" title="Click to change background">
         </div>
         <div style="text-align: left">
         <ul style="text-align: center;margin-left: -45px">
@@ -31,11 +39,12 @@
         <ul>
             <li>
                 <article>
-                    <h1 id="about">
+                    <p id="about">
                          <span class="text-primary">MAI</span>
                         HOANG
                         <span class="text-primary">MINH</span>
-                    </h1>
+                    </p>
+                    <p style="margin-bottom: 60px"><b>(マイ・<span class="text-primary">ホアン</span>・ミン)</b></p>
                     <h2 >ABOUT</h2>
                     <p id="education">You’ve gotta dance like there’s nobody watching.
                         Love like you’ll never be hurt.
@@ -62,12 +71,12 @@
                             <p>CPA: 3.4</p>
                         </li>
                     </ul>
-                    <hr>
+                    <hr id="skill">
                 </article>
             </li>
             <li>
                 <article>
-                    <h2 id="skill">SKILL</h2>
+                    <h2>SKILL</h2>
                     <ul>
                         <li>
                             <h3>IT - language</h3>
@@ -84,12 +93,12 @@
         </ul>
     </section>
 
-    <footer>
-        <address>
-            Address: 298, De La Thanh, Dong Da, Ha Noi
+    <footer id="footer">
+        <address style="color: white">
+            <p>Address: 298, De La Thanh, Dong Da, Ha Noi</p>
+            <p><a href="tel:+84365446684">Tel: +84 365 446 684</a></p>
+            <p>Email: maihoangminhbk@gmail.com</p>
         </address>
-        <p><a href="tel:+84365446684">Tel: +84 365 446 684</a></p>
-        <p>Email: maihoangminhbk@gmail.com</p>
 
     </footer>
 
