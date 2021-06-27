@@ -10,13 +10,13 @@
 <body id="body">
     <header id="header">
         <a href="index.html"><img class="sign-img" src="images/signature.gif" alt="Sign"></a>
-        <span class="dropdown right-align">
+        <div class="dropdown right-align">
             <i class="fa fa-gear fa-spin right-align-setting" style="font-size:30px"></i>
             <div class="dropdown-content">
                 <a onclick="changeLayout()">Layout <img src="images/change-layout.png" alt="Layout" style="width: 20px;height: 20px"></a>
                 <a onclick="changeColor()">Color <img src="images/change-color.jpg" alt="Color" style="width: 20px;height: 20px"></a>
             </div>
-        </span>
+        </div>
         <a href="https://www.facebook.com/MHMHACKER" target="_blank"><i class="fa fa-facebook-official right-align" style="font-size:30px;color: #222bd0" title="Facebook"></i></a>
         <a href="https://github.com/maihoangminhbk" target="_blank"><i class="fa fa-github right-align" style="font-size:30px;color: white" title="Github"></i></a>
         <a href="mailto:maihoangminhbk@gmail.com" target="_blank"><i class="fa fa-envelope right-align" style="font-size:30px;color: darkgreen" title="Email"></i></a>
@@ -31,6 +31,8 @@
             <li style="line-height: 2"><a class="profile-info-list" href="#about"><b>about</b></a></li>
             <li style="line-height: 2"><a class="profile-info-list" href="#education"><b>education</b></a></li>
             <li style="line-height: 2"><a class="profile-info-list" href="#skill"><b>skill</b></a></li>
+            <li style="line-height: 2"><a class="profile-info-list" href="#video"><b>video</b></a></li>
+
         </ul>
         </div>
     </aside>
@@ -87,13 +89,46 @@
                             <p>JLPT N3</p>
                         </li>
                     </ul>
-                    <hr>
+                    <hr id="video">
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h2>VIDEO</h2>
+                    <iframe width="420" height="345" src="https://www.youtube.com/embed/LKUQQtvLTj4"></iframe>
+                    <p>This is my self-introduction video. All are spoken in Japanese. Thanks everyone.</p>
                 </article>
             </li>
         </ul>
     </section>
 
     <footer id="footer">
+        <!-- Messenger チャットプラグイン Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your チャットプラグイン code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "108699871467701");
+            chatbox.setAttribute("attribution", "page_inbox");
+            window.fbAsyncInit = function() {
+                FB.init({
+                    xfbml            : true,
+                    version          : 'v11.0'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
         <address style="color: white">
             <p>Address: 298, De La Thanh, Dong Da, Ha Noi</p>
             <p><a href="tel:+84365446684">Tel: +84 365 446 684</a></p>

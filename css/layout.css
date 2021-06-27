@@ -10,12 +10,13 @@ body{
 header{
     position: sticky;
     top: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /*padding-top: 10px;*/
+    /*padding-bottom: 10px;*/
     background-color: #ff3a10;
-    height: 40px;
+    height: 50px;
     width: 100%;
     border-radius: 10px;
+    display: inline-block;
 
 }
 
@@ -88,13 +89,18 @@ a{
 .right-align{
     float: right;
     padding-left: 20px;
+    padding-top: 10px;
     padding-right: 20px;
+    padding-bottom: 10px;
+
 }
 
 .right-align-setting{
     float: right;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+
 }
 
 .right-align:hover{
@@ -135,6 +141,9 @@ article{
     min-width: 85px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-top: 100px;
+    /*padding-left: 20px;*/
+    padding-right: 20px;
 }
 
 .dropdown-content a{
