@@ -18,6 +18,7 @@ header{
     border-radius: 10px;
     display: inline-block;
 
+
 }
 
 aside{
@@ -29,6 +30,8 @@ aside{
     text-align: center;
     border-radius: 10px;
     margin-top: 20px;
+    box-shadow: 8px 8px 8px 0px rgba(0,0,0,0.4);
+
 }
 
 #content{
@@ -42,9 +45,11 @@ footer{
     background-color: #ff3a10;
     clear: both;
     width: 100%;
-    height: 100px;
+    height: 120px;
     border-radius: 10px;
     text-decoration-color: aliceblue;
+    box-shadow: 8px -8px 8px 0px rgba(0,0,0,0.3);
+
 }
 
 .profile-img{
@@ -122,11 +127,14 @@ article{
     aside, section {
         width: 100%;
         height: auto;
+        max-width: 1200px;
     }
 }
 
 .dropdown{
     position: relative;
+    cursor: pointer;
+
 }
 
 .dropdown:hover .dropdown-content {
@@ -139,18 +147,18 @@ article{
     position: absolute;
     background-color: #fd3a10;
     min-width: 85px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
     z-index: 1;
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     /*padding-left: 20px;*/
-    padding-right: 20px;
+    /*padding-right: 20px;*/
 }
 
 .dropdown-content a{
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*cursor: pointer;*/
 }
 
 .dropdown-content a:hover{
